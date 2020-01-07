@@ -1,0 +1,4 @@
+id;taxi_status
+1;FREE
+2;BUSY
+3;OFF

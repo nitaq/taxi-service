@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AmazingTaxiService password reset</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .links
+        {
+            color: blue;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 2px 4px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p th:text="#{email.reset.greeting(${user.firstName})}">
+
+    </p>
+    <p th:text="#{email.reset.text1}">
+
+    </p>
+
+    <br>
+    <p>
+        <a th:href="@{|${url}|}" class="links">Reset Email</a>
+    </p>
+    <br>
+
+    <p>
+        <span th:text="#{email.reset.text2}"> </span>
+        <br/>
+        <em th:text="#{email.signature}"></em>
+    </p>
+</body>
+</html>

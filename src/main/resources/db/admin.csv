@@ -1,0 +1,2 @@
+id;password;first_name;last_name;email;enabled;phone;token;expiry_date;role_id
+1;$2a$10$rnqfdgC8jaDPjR71hnOTQuBk2c/TYuD0WNo1RgRG29tMqP0Wq/OBO;Endrit;Toplica;endrit.toplica@outlook.com;true;044123456;33687452-8247-4ffd-a108-c00a71705333;2019-10-31 16:12:42.410000;1

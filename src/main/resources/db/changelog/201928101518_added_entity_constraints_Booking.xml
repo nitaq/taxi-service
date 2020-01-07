@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20180507135542-2" author="admin">
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="booking"
+                                 constraintName="fk_user_booking"
+                                 referencedColumnNames="id"
+                                 referencedTableName="user"/>
+
+        <addForeignKeyConstraint baseColumnNames="taxi_id"
+                                 baseTableName="booking"
+                                 constraintName="fk_taxi_booking"
+                                 referencedColumnNames="id"
+                                 referencedTableName="taxi"/>
+
+    </changeSet>
+</databaseChangeLog>
